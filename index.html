@@ -13,7 +13,12 @@
             <div class="logo">
                 <h1>VERDE basilico</h1>
             </div>
-            <ul>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#come-funziona">Come Funziona</a></li>
                 <li><a href="#faq">FAQ</a></li>
@@ -21,47 +26,50 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h2>IL PIACERE DI UN PASTO FATTO IN CASA SENZA IL PENSIERO DI CUCINARE</h2>
-            <p>SERVIZIO DI CONSEGNA PASTI A DOMICILIO NEL LOCARNESE E DINTORNI</p>
-            <p class="subtitle">Per anziani e per chi desidera ricevere un pasto pronto direttamente a casa</p>
-            <div class="contact-info">
-                <a href="tel:+41764897572" class="phone">+41 076 489 75 72</a>
-                <p class="order-time">Ordini entro le 18:30 del giorno prima</p>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>IL PIACERE DI UN PASTO FATTO IN CASA</h2>
+                <p>Servizio di consegna pasti a domicilio nel Locarnese</p>
+                <div class="contact-info">
+                    <a href="tel:+41764897572" class="phone">076 489 75 72</a>
+                    <p class="order-time">Ordini entro le 18:30 del giorno prima</p>
+                </div>
             </div>
-            <a href="#menu" class="cta-button">Scopri il Menu</a>
-        </div>
-    </section>
+        </section>
 
-    <section id="menu" class="menu-section">
-        <h2>I Nostri Piatti</h2>
-        <p class="menu-tagline">Sapori Autentici • Ingredienti di Qualità • Preparati con Cura</p>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <h3>Menu Personalizzati</h3>
-                <p>Offriamo menu personalizzati su richiesta con almeno 3 giorni di preavviso. I prezzi possono variare in base alle richieste specifiche.</p>
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2>I Nostri Piatti</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <h3>Menu Personalizzati</h3>
+                        <p>Menu su richiesta con 3 giorni di preavviso</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Menu del Giorno</h3>
+                        <p>Contattaci per le proposte di oggi</p>
+                    </div>
+                </div>
             </div>
-            <div class="menu-item">
-                <h3>Menu del Giorno</h3>
-                <p>Il nostro menu varia quotidianamente per garantire varietà e freschezza. Contattaci per conoscere le proposte del giorno.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="faq" class="faq-section">
-        <h2>Domande Frequenti</h2>
-        <div class="faq-grid">
-            <div class="faq-item">
-                <h3>Come funziona la consegna?</h3>
-                <p>Consegniamo i pasti a domicilio nel Locarnese e dintorni. È possibile pagare in contanti o con TWINT.</p>
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h2>Domande Frequenti</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Come funziona la consegna?</h3>
+                        <p>Consegniamo a domicilio nel Locarnese. Pagamento in contanti o TWINT.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Quali zone coprite?</h3>
+                        <p>Serviamo il Locarnese e dintorni. Contattaci per verificare la tua zona.</p>
+                    </div>
+                </div>
             </div>
-            <div class="faq-item">
-                <h3>Quali zone coprite?</h3>
-                <p>Serviamo il Locarnese e le zone limitrofe. Contattaci per verificare se la tua zona è coperta dal servizio.</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <p> 2024 Verde Basilico - Servizio Pasti a Domicilio</p>
@@ -70,5 +78,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
