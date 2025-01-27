@@ -3,254 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verde Basilico - Il pranzo a casa tua tutti i giorni</title>
+    <title>Verde Basilico - Pasti a Domicilio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="assets/css/gallery.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <h1>Verde Basilico</h1>
+                <h1>VERDE basilico</h1>
             </div>
             <ul>
                 <li><a href="#menu">Menu</a></li>
-                <li><a href="#prezzi">Prezzi</a></li>
-                <li><a href="#servizi">Servizi</a></li>
-                <li><a href="#contatti">Contatti</a></li>
-                <li><a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                <li><a href="#come-funziona">Come Funziona</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Shopping Cart Modal -->
-    <div id="cart-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Il tuo carrello</h2>
-            <div id="cart-items"></div>
-            <div id="cart-total">
-                <p>Totale: €<span id="total-amount">0.00</span></p>
-                <button id="checkout-btn" class="cta-button">Procedi all'ordine</button>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>IL PIACERE DI UN PASTO FATTO IN CASA SENZA IL PENSIERO DI CUCINARE</h2>
+            <p>SERVIZIO DI CONSEGNA PASTI A DOMICILIO NEL LOCARNESE E DINTORNI</p>
+            <p class="subtitle">Per anziani e per chi desidera ricevere un pasto pronto direttamente a casa</p>
+            <div class="contact-info">
+                <a href="tel:+41764897572" class="phone">+41 076 489 75 72</a>
+                <p class="order-time">Ordini entro le 18:30 del giorno prima</p>
+            </div>
+            <a href="#menu" class="cta-button">Scopri il Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>I Nostri Piatti</h2>
+        <p class="menu-tagline">Sapori Autentici • Ingredienti di Qualità • Preparati con Cura</p>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>Menu Personalizzati</h3>
+                <p>Offriamo menu personalizzati su richiesta con almeno 3 giorni di preavviso. I prezzi possono variare in base alle richieste specifiche.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Menu del Giorno</h3>
+                <p>Il nostro menu varia quotidianamente per garantire varietà e freschezza. Contattaci per conoscere le proposte del giorno.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Il pranzo a casa tua tutti i giorni</h2>
-                <p>Cucina mediterranea tradizionale, menu speciali per diabetici e intolleranti</p>
-                <a href="#ordina" class="cta-button">Ordina Ora</a>
+    <section id="faq" class="faq-section">
+        <h2>Domande Frequenti</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h3>Come funziona la consegna?</h3>
+                <p>Consegniamo i pasti a domicilio nel Locarnese e dintorni. È possibile pagare in contanti o con TWINT.</p>
             </div>
-        </section>
-
-        <section id="menu" class="menu-section">
-            <h2>I Nostri Piatti</h2>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=500&q=80" alt="Piatto mediterraneo">
-                    <h3>Specialità Mediterranee</h3>
-                </div>
-                <div class="menu-item">
-                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500&q=80" alt="Menu diabetici">
-                    <h3>Menu per Diabetici</h3>
-                </div>
-                <div class="menu-item">
-                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80" alt="Menu intolleranti">
-                    <h3>Menu per Intolleranti</h3>
-                </div>
+            <div class="faq-item">
+                <h3>Quali zone coprite?</h3>
+                <p>Serviamo il Locarnese e le zone limitrofe. Contattaci per verificare se la tua zona è coperta dal servizio.</p>
             </div>
-        </section>
-
-        <section id="prezzi" class="pricing-section">
-            <h2>I Nostri Menu</h2>
-            <div class="pricing-grid">
-                <div class="pricing-item featured">
-                    <h3>Menu Base</h3>
-                    <p class="price">CHF 21</p>
-                    <ul>
-                        <li>Antipasto del giorno</li>
-                        <li>Piatto principale</li>
-                        <li>Pane</li>
-                        <li>Consegna inclusa</li>
-                    </ul>
-                    <button class="add-to-cart" data-price="21" data-name="Menu Base">Ordina Ora</button>
-                </div>
-                <div class="pricing-item special-menu">
-                    <h3>Menu per Diabetici</h3>
-                    <p class="price-on-request">Prezzo su richiesta</p>
-                    <ul>
-                        <li>Menu personalizzato</li>
-                        <li>Controllo degli zuccheri</li>
-                        <li>Porzioni bilanciate</li>
-                        <li>Consulenza nutrizionale</li>
-                    </ul>
-                    <button class="contact-btn" onclick="location.href='#contatti'">Contattaci</button>
-                </div>
-                <div class="pricing-item special-menu">
-                    <h3>Menu per Intolleranti</h3>
-                    <p class="price-on-request">Prezzo su richiesta</p>
-                    <ul>
-                        <li>Menu personalizzato</li>
-                        <li>Ingredienti selezionati</li>
-                        <li>Opzioni senza glutine</li>
-                        <li>Opzioni senza lattosio</li>
-                    </ul>
-                    <button class="contact-btn" onclick="location.href='#contatti'">Contattaci</button>
-                </div>
-            </div>
-        </section>
-
-        <section id="servizi" class="services-section">
-            <h2>I Nostri Servizi</h2>
-            <p class="services-intro">Portiamo la qualità del ristorante direttamente a casa tua o in ufficio. 
-            Il nostro servizio è pensato per chi cerca un pasto sano e gustoso durante la pausa pranzo e per gli anziani che desiderano 
-            un'alimentazione curata senza dover cucinare.</p>
-            
-            <div class="services-grid">
-                <div class="service-item">
-                    <i class="fas fa-clock"></i>
-                    <h3>Orari di Consegna</h3>
-                    <p>Consegna puntuale dal lunedì al sabato tra le 11:00 e le 12:30.
-                    Ordina entro le 9:30 per ricevere il tuo pasto in giornata.</p>
-                </div>
-
-                <div class="service-item">
-                    <i class="fas fa-users"></i>
-                    <h3>Per Chi è Pensato</h3>
-                    <ul class="service-list">
-                        <li>Persone anziane che cercano pasti equilibrati</li>
-                        <li>Professionisti in pausa pranzo</li>
-                        <li>Chi segue diete specifiche</li>
-                        <li>Chi non ha tempo di cucinare</li>
-                    </ul>
-                </div>
-
-                <div class="service-item">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Qualità Garantita</h3>
-                    <ul class="service-list">
-                        <li>Ingredienti freschi e di stagione</li>
-                        <li>Porzioni abbondanti e bilanciate</li>
-                        <li>Menu variato settimanalmente</li>
-                        <li>Piatti caldi e ben conservati</li>
-                    </ul>
-                </div>
-
-                <div class="service-item">
-                    <i class="fas fa-utensils"></i>
-                    <h3>Contenitori e Consegna</h3>
-                    <ul class="service-list">
-                        <li>Contenitori in vetro riutilizzabili</li>
-                        <li>Consegna gratuita nella zona di servizio</li>
-                        <li>Possibilità di abbonamento settimanale</li>
-                        <li>Ritiro contenitori vuoti al pasto successivo</li>
-                    </ul>
-                </div>
-
-                <div class="service-item">
-                    <i class="fas fa-phone"></i>
-                    <h3>Assistenza Dedicata</h3>
-                    <p>Servizio clienti disponibile dalle 8:30 alle 14:30 per:
-                    <ul class="service-list">
-                        <li>Modifiche dell'ultimo minuto</li>
-                        <li>Richieste speciali</li>
-                        <li>Consulenza alimentare</li>
-                        <li>Supporto per gli ordini</li>
-                    </ul>
-                </div>
-
-                <div class="service-item">
-                    <i class="fas fa-heart"></i>
-                    <h3>Vantaggi</h3>
-                    <ul class="service-list">
-                        <li>Nessun impegno di preparazione</li>
-                        <li>Risparmio di tempo e fatica</li>
-                        <li>Alimentazione sana e controllata</li>
-                        <li>Flessibilità nelle ordinazioni</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Galleria -->
-        <section class="gallery-container">
-            <h2 class="gallery-title">I Nostri Piatti</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="assets/images/dishes/PHOTO-2024-10-10-17-23-28.jpg" alt="Antipasto Verde Basilico">
-                    <div class="gallery-item-overlay">
-                        <h3 class="gallery-item-title">Antipasto Speciale</h3>
-                        <p class="gallery-item-description">Un delizioso antipasto della casa</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/images/dishes/PHOTO-2024-10-10-17-36-49.jpg" alt="Piatto Verde Basilico">
-                    <div class="gallery-item-overlay">
-                        <h3 class="gallery-item-title">Specialità dello Chef</h3>
-                        <p class="gallery-item-description">Una delle nostre specialità</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/images/dishes/PHOTO-2024-10-10-17-36-50.jpg" alt="Piatto Verde Basilico">
-                    <div class="gallery-item-overlay">
-                        <h3 class="gallery-item-title">Piatto Tradizionale</h3>
-                        <p class="gallery-item-description">Sapori autentici della tradizione</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/images/dishes/PHOTO-2024-10-10-17-36-51.jpg" alt="Piatto Verde Basilico">
-                    <div class="gallery-item-overlay">
-                        <h3 class="gallery-item-title">Creazione dello Chef</h3>
-                        <p class="gallery-item-description">Un piatto unico e raffinato</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/images/dishes/PHOTO-2024-10-10-17-36-52.jpg" alt="Piatto Verde Basilico">
-                    <div class="gallery-item-overlay">
-                        <h3 class="gallery-item-title">Delizia Verde Basilico</h3>
-                        <p class="gallery-item-description">Una delle nostre creazioni più amate</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/images/dishes/PHOTO-2024-10-10-17-36-53.jpg" alt="Piatto Verde Basilico">
-                    <div class="gallery-item-overlay">
-                        <h3 class="gallery-item-title">Piatto Signature</h3>
-                        <p class="gallery-item-description">Il nostro piatto signature</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contatti" class="contact-section">
-            <h2>Contattaci</h2>
-            <div class="contact-info">
-                <p>Telefono: +41 76 489 75 72</p>
-                <p>Email: verdebasilico@gmail.com</p>
-                <div class="order-form">
-                    <h3>Prenota il tuo pranzo</h3>
-                    <form id="orderForm">
-                        <input type="text" id="user_name" name="user_name" placeholder="Nome" required>
-                        <input type="email" id="user_email" name="user_email" placeholder="Email" required>
-                        <input type="tel" id="user_phone" name="user_phone" placeholder="Telefono" required>
-                        <select id="menu_type" name="menu_type" required>
-                            <option value="">Seleziona il tipo di menu</option>
-                            <option value="base">Menu Base (CHF 21)</option>
-                            <option value="diabetic">Menu per Diabetici</option>
-                            <option value="intolerant">Menu per Intolleranti</option>
-                        </select>
-                        <textarea id="message" name="message" placeholder="Note speciali o richieste particolari"></textarea>
-                        <button type="submit" class="cta-button">Invia Ordine</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Verde Basilico. Tutti i diritti riservati.</p>
+        <p> 2024 Verde Basilico - Servizio Pasti a Domicilio</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>

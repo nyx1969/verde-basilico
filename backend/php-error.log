@@ -1,0 +1,226 @@
+[17-Jan-2025 13:50:22 UTC] Received input: {"user_name":"test user","user_email":"lesca@hispeed.ch","user_phone":"0766745132","menu_type":"base","message":"test"}
+[17-Jan-2025 13:50:22 UTC] Decoded data: Array
+(
+    [user_name] => test user
+    [user_email] => lesca@hispeed.ch
+    [user_phone] => 0766745132
+    [menu_type] => base
+    [message] => test
+)
+
+[17-Jan-2025 13:52:33 UTC] Received input: {"user_name":"test user","user_email":"lesca@hispeed.ch","user_phone":"0766246969","menu_type":"base","message":"test"}
+[17-Jan-2025 13:52:33 UTC] Decoded data: Array
+(
+    [user_name] => test user
+    [user_email] => lesca@hispeed.ch
+    [user_phone] => 0766246969
+    [menu_type] => base
+    [message] => test
+)
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP a640c23a62f3a-ab384cea379sm173237966b.72 - gsmtp
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: EHLO localhost
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2a02:aa12:c37d:9500:10bb:ceb:48f0:4b1d]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: STARTTLS
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: EHLO localhost
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2a02:aa12:c37d:9500:10bb:ceb:48f0:4b1d]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: AUTH LOGIN
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: [credentials hidden]
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: [credentials hidden]
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: MAIL FROM:<mlesca69@gmail.com>
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: SERVER -> CLIENT: 250 2.1.0 OK a640c23a62f3a-ab384cea379sm173237966b.72 - gsmtp
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: RCPT TO:<mlesca69@gmail.com>
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: SERVER -> CLIENT: 250 2.1.5 OK a640c23a62f3a-ab384cea379sm173237966b.72 - gsmtp
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: DATA
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: SERVER -> CLIENT: 354 Go ahead a640c23a62f3a-ab384cea379sm173237966b.72 - gsmtp
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: Date: Fri, 17 Jan 2025 13:52:33 +0000
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: To: mlesca69@gmail.com
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: From: Verde Basilico <mlesca69@gmail.com>
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: Reply-To: test user <lesca@hispeed.ch>
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: Subject: Nuovo ordine da test user
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: Message-ID: <flMuuuN7G8oyOnrAA8KBAjOcVX5m1d8GB6gGZ9QA@localhost>
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: MIME-Version: 1.0
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: 
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: 
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER:         <div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;'>
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER:             <h2>Nuovo ordine ricevuto</h2>
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER:             <p><strong>Nome:</strong> test user</p>
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER:             <p><strong>Email:</strong> lesca@hispeed.ch</p>
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER:             <p><strong>Telefono:</strong> 0766246969</p>
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER:             <p><strong>Tipo Menu:</strong> base</p>
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER:             <p><strong>Messaggio:</strong><br>test</p>
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER:         </div>
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: 
+
+[17-Jan-2025 13:52:34 UTC] SMTP Debug: CLIENT -> SERVER: .
+
+[17-Jan-2025 13:52:35 UTC] SMTP Debug: SERVER -> CLIENT: 250 2.0.0 OK  1737121954 a640c23a62f3a-ab384cea379sm173237966b.72 - gsmtp
+
+[17-Jan-2025 13:52:35 UTC] SMTP Debug: CLIENT -> SERVER: QUIT
+
+[17-Jan-2025 13:52:35 UTC] SMTP Debug: SERVER -> CLIENT: 221 2.0.0 closing connection a640c23a62f3a-ab384cea379sm173237966b.72 - gsmtp
+
+[27-Jan-2025 13:43:04 UTC] Received input: {"user_name":"Marco","user_email":"lesca@hispeed.ch","user_phone":"0766745132","menu_type":"base","message":""}
+[27-Jan-2025 13:43:04 UTC] Decoded data: Array
+(
+    [user_name] => Marco
+    [user_email] => lesca@hispeed.ch
+    [user_phone] => 0766745132
+    [menu_type] => base
+    [message] => 
+)
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 4fb4d7f45d1cf-5dc186b37a0sm5257340a12.60 - gsmtp
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: EHLO localhost
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2a02:aa12:c37d:9500:d9a1:f198:2a7c:c8dd]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: STARTTLS
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: EHLO localhost
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [2a02:aa12:c37d:9500:d9a1:f198:2a7c:c8dd]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: AUTH LOGIN
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: [credentials hidden]
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: [credentials hidden]
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: MAIL FROM:<mlesca69@gmail.com>
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: SERVER -> CLIENT: 250 2.1.0 OK 4fb4d7f45d1cf-5dc186b37a0sm5257340a12.60 - gsmtp
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: RCPT TO:<mlesca69@gmail.com>
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: SERVER -> CLIENT: 250 2.1.5 OK 4fb4d7f45d1cf-5dc186b37a0sm5257340a12.60 - gsmtp
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: DATA
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: SERVER -> CLIENT: 354 Go ahead 4fb4d7f45d1cf-5dc186b37a0sm5257340a12.60 - gsmtp
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: Date: Mon, 27 Jan 2025 13:43:04 +0000
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: To: mlesca69@gmail.com
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: From: Verde Basilico <mlesca69@gmail.com>
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: Reply-To: Marco <lesca@hispeed.ch>
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: Subject: Nuovo ordine da Marco
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: Message-ID: <gJeHG63cCsFS6WYr0cjdIhkR6MQKMBRWA2aw2IcxlQ@localhost>
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: MIME-Version: 1.0
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: 
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: 
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER:         <div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;'>
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER:             <h2>Nuovo ordine ricevuto</h2>
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER:             <p><strong>Nome:</strong> Marco</p>
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER:             <p><strong>Email:</strong> lesca@hispeed.ch</p>
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER:             <p><strong>Telefono:</strong> 0766745132</p>
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER:             <p><strong>Tipo Menu:</strong> base</p>
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER:             <p><strong>Messaggio:</strong><br></p>
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER:         </div>
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: 
+
+[27-Jan-2025 13:43:05 UTC] SMTP Debug: CLIENT -> SERVER: .
+
+[27-Jan-2025 13:43:06 UTC] SMTP Debug: SERVER -> CLIENT: 250 2.0.0 OK  1737985386 4fb4d7f45d1cf-5dc186b37a0sm5257340a12.60 - gsmtp
+
+[27-Jan-2025 13:43:06 UTC] SMTP Debug: CLIENT -> SERVER: QUIT
+
+[27-Jan-2025 13:43:06 UTC] SMTP Debug: SERVER -> CLIENT: 221 2.0.0 closing connection 4fb4d7f45d1cf-5dc186b37a0sm5257340a12.60 - gsmtp
+
