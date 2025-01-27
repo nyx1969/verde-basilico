@@ -35,23 +35,27 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
+    padding: 0.5rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .logo h1 {
     color: var(--primary-color);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
 }
 
 nav ul li {
-    margin-left: 2rem;
+    margin: 0;
 }
 
 nav ul li a {
@@ -59,10 +63,30 @@ nav ul li a {
     color: var(--text-color);
     font-weight: 600;
     transition: color 0.3s;
+    font-size: 0.9rem;
+    padding: 0.5rem;
 }
 
-nav ul li a:hover {
-    color: var(--primary-color);
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
 }
 
 /* Hero Section */
