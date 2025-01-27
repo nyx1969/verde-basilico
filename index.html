@@ -3,86 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verde Basilico - Pasti a Domicilio</title>
+    <title>Verde Basilico</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <h1>VERDE basilico</h1>
-            </div>
-            <button class="menu-toggle">
+            <div class="logo">Verde Basilico</div>
+            <button class="menu-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
-                <li><a href="#come-funziona">Come Funziona</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#chi-siamo">Chi Siamo</a></li>
+                <li><a href="#contatti">Contatti</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="hero-content">
-                <h2>IL PIACERE DI UN PASTO FATTO IN CASA</h2>
-                <p>Servizio di consegna pasti a domicilio nel Locarnese</p>
-                <div class="contact-info">
-                    <a href="tel:+41764897572" class="phone">076 489 75 72</a>
-                    <p class="order-time">Ordini entro le 18:30 del giorno prima</p>
-                </div>
+                <h1>Verde Basilico</h1>
+                <p>Autentica Cucina Italiana</p>
             </div>
         </section>
 
         <section id="menu" class="menu-section">
-            <div class="container">
-                <h2>I Nostri Piatti</h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <h3>Menu Personalizzati</h3>
-                        <p>Menu su richiesta con 3 giorni di preavviso</p>
-                    </div>
-                    <div class="menu-item">
-                        <h3>Menu del Giorno</h3>
-                        <p>Contattaci per le proposte di oggi</p>
-                    </div>
+            <h2>Il Nostro Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Antipasti</h3>
+                    <ul>
+                        <li>Bruschetta al Pomodoro</li>
+                        <li>Caprese con Basilico Fresco</li>
+                        <li>Carpaccio di Manzo</li>
+                    </ul>
+                </div>
+                <div class="menu-item">
+                    <h3>Primi Piatti</h3>
+                    <ul>
+                        <li>Spaghetti al Basilico</li>
+                        <li>Penne all'Arrabbiata</li>
+                        <li>Risotto ai Funghi</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="faq" class="faq-section">
-            <div class="container">
-                <h2>Domande Frequenti</h2>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h3>Come funziona la consegna?</h3>
-                        <p>Consegniamo a domicilio nel Locarnese. Pagamento in contanti o TWINT.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Quali zone coprite?</h3>
-                        <p>Serviamo il Locarnese e dintorni. Contattaci per verificare la tua zona.</p>
-                    </div>
-                </div>
+        <section id="chi-siamo" class="chi-siamo-section">
+            <h2>Chi Siamo</h2>
+            <p>Verde Basilico porta l'essenza della cucina italiana sulla vostra tavola. 
+               La nostra passione per gli ingredienti freschi e le ricette tradizionali 
+               si riflette in ogni piatto che serviamo.</p>
+        </section>
+
+        <section id="contatti" class="contatti-section">
+            <h2>Contatti</h2>
+            <div class="contatti-info">
+                <p>📍 Via Roma, 123</p>
+                <p>📞 +39 123 456 789</p>
+                <p>✉️ info@verdebasilico.it</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p> 2024 Verde Basilico - Servizio Pasti a Domicilio</p>
+        <p>&copy; 2025 Verde Basilico. Tutti i diritti riservati.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
-    <script src="script.js"></script>
-    <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            this.classList.toggle('active');
-            document.querySelector('.nav-menu').classList.toggle('active');
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
