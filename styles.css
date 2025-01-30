@@ -103,23 +103,43 @@ nav {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: var(--secondary-color);
+    color: var(--text-color);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
-    padding: 8px 15px;
-    border: 2px solid var(--secondary-color);
-    border-radius: 25px;
-    transition: all 0.3s ease;
 }
 
 .phone-link i {
-    font-size: 16px;
+    font-size: 14px;
+    color: white;
+    background: var(--primary-color);
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
 .phone-link:hover {
-    background: var(--secondary-color);
-    color: white;
+    color: var(--primary-color);
+}
+
+.phone-link:hover i {
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+    .phone-link {
+        font-size: 20px;
+    }
+
+    .phone-link i {
+        font-size: 16px;
+        width: 32px;
+        height: 32px;
+    }
 }
 
 /* Hero Section - Più compatta */
@@ -207,15 +227,6 @@ nav {
 
     .basilico {
         font-size: 24px;
-    }
-
-    .phone-link {
-        font-size: 20px;
-        padding: 10px 20px;
-    }
-
-    .phone-link i {
-        font-size: 18px;
     }
 
     .hero {
