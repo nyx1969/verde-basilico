@@ -81,7 +81,7 @@ nav {
 
 .verde {
     font-family: 'Playfair Display', serif;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -89,7 +89,7 @@ nav {
 
 .basilico {
     font-family: 'Playfair Display', serif;
-    color: var(--secondary-color);
+    color: var(--text-color);
     font-size: 20px;
     font-style: italic;
     margin-top: -2px;
@@ -103,12 +103,12 @@ nav {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
     padding: 8px 15px;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--secondary-color);
     border-radius: 25px;
     transition: all 0.3s ease;
 }
@@ -118,7 +118,7 @@ nav {
 }
 
 .phone-link:hover {
-    background: var(--primary-color);
+    background: var(--secondary-color);
     color: white;
 }
 
