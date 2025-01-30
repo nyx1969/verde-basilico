@@ -640,49 +640,103 @@ nav {
 }
 
 .contact-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
 .contact-methods {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contact-method {
-    background: var(--white);
-    padding: 2rem;
-    border-radius: 10px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .contact-method i {
-    font-size: 2rem;
+    font-size: 32px;
     color: var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 5px;
+}
+
+.contact-method h3 {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin: 0;
+}
+
+.contact-method p {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.contact-method .hours {
+    color: var(--text-light);
+    font-size: 14px;
 }
 
 .button-container {
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 
 .contact-button {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
     background: var(--primary-color);
-    color: var(--white);
+    color: white;
     text-decoration: none;
-    border-radius: 50px;
+    padding: 10px 25px;
+    border-radius: 25px;
     font-weight: 600;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .contact-button:hover {
-    background: var(--secondary-color);
+    background: #1b5e20;
+    transform: translateY(-2px);
+}
+
+@media screen and (min-width: 768px) {
+    .contact-methods {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .contact-method {
+        padding: 40px;
+    }
+
+    .contact-method i {
+        font-size: 36px;
+    }
+
+    .contact-method h3 {
+        font-size: 22px;
+    }
+
+    .contact-method p {
+        font-size: 18px;
+    }
+
+    .contact-method .hours {
+        font-size: 16px;
+    }
+
+    .contact-button {
+        padding: 12px 30px;
+    }
 }
 
 /* Footer */
