@@ -299,93 +299,52 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: var(--background-overlay), url('images/hero-bg.jpg') center/cover;
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 10px;
+    color: white;
     text-align: center;
-    color: var(--white);
-}
-
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
     line-height: 1.2;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);  /* Ombra più marcata */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.title-line {
-    display: block;
-    text-align: center;
-    white-space: nowrap;
+    padding: 0 5px;
 }
 
 .hero h2 {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    color: #e0e0e0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);  /* Ombra più marcata */
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 0 5px;
 }
 
 .hero-subtitle {
-    font-size: 16px;
-    color: #e0e0e0;
-    margin-bottom: 2rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);  /* Ombra più marcata */
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 13px;
+    margin-bottom: 15px;
+    padding: 0 5px;
 }
 
 .hero-features {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .feature {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 8px;
+}
+
+.feature i {
+    font-size: 16px;
 }
 
 .feature span {
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);  /* Ombra più marcata */
-}
-
-.cta-group {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.cta-button {
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.primary {
-    background: var(--primary-color);
-    color: var(--white);
-}
-
-.secondary {
-    background: transparent;
-    color: var(--white);
-    border: 2px solid var(--white);
+    font-size: 13px;
 }
 
 /* How it works */
