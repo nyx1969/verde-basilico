@@ -22,22 +22,22 @@ html, body {
     line-height: 1.6;
 }
 
-/* Stili base e spaziature */
+/* Stili base e spaziature uniformi */
 section {
-    padding: 60px 20px;
+    padding: 50px 20px;
+}
+
+section + section {
+    padding-top: 50px;
 }
 
 section h2 {
     color: var(--primary-color);
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 28px;
     line-height: 1.4;
-}
-
-section p {
-    margin-bottom: 20px;
-    line-height: 1.6;
+    padding-top: 20px; /* Spazio extra sopra per il testo verde */
 }
 
 /* Header - Mobile First */
@@ -161,7 +161,8 @@ nav {
 /* Hero Section */
 .hero {
     background: var(--background-overlay), url('images/hero-bg.jpg') center/cover;
-    padding: 120px 20px 40px;
+    padding-top: 140px; /* Aumentato per far scendere il testo */
+    padding-bottom: 50px;
     color: white;
     text-align: center;
     width: 100%;
@@ -230,7 +231,8 @@ nav {
 /* Desktop styles per hero */
 @media screen and (min-width: 768px) {
     .hero {
-        padding: 150px 40px 80px;
+        padding-top: 160px; /* Aumentato per far scendere il testo */
+        padding-bottom: 80px;
     }
 
     .hero h1 {
@@ -281,7 +283,7 @@ nav {
 /* Sezione Come Funziona */
 .how-section {
     background: white;
-    padding: 60px 20px;
+    padding: 50px 20px;
 }
 
 .steps {
@@ -322,7 +324,7 @@ nav {
 /* Menu Section */
 .menu-section {
     background: var(--light-gray);
-    padding: 60px 20px;
+    padding: 50px 20px;
 }
 
 .menu-section h2 {
@@ -401,12 +403,17 @@ nav {
 /* Desktop Styles */
 @media screen and (min-width: 768px) {
     section {
-        padding: 100px 40px;
+        padding: 80px 40px;
+    }
+
+    section + section {
+        padding-top: 80px;
     }
 
     section h2 {
         font-size: 36px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
+        padding-top: 30px; /* Spazio extra sopra per il testo verde */
     }
 
     .steps {
@@ -545,26 +552,76 @@ nav {
 
 /* FAQ Section */
 .faq-section {
-    background: var(--white);
+    padding: 50px 20px;
+    background: var(--light-gray);
 }
 
-.faq-grid {
-    max-width: var(--container-width);
+.faq-container {
+    max-width: 800px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
 }
 
 .faq-item {
-    background: var(--light-gray);
-    padding: 2rem;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.faq-item:hover {
-    transform: translateY(-5px);
+.faq-question {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.faq-answer {
+    padding: 0 20px 20px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
+    section {
+        padding: 80px 40px;
+    }
+
+    section + section {
+        padding-top: 80px;
+    }
+
+    section h2 {
+        font-size: 36px;
+        margin-bottom: 50px;
+        padding-top: 30px; /* Spazio extra sopra per il testo verde */
+    }
+
+    .hero {
+        padding-top: 160px; /* Aumentato per far scendere il testo */
+        padding-bottom: 80px;
+    }
+
+    .faq-section {
+        padding: 80px 40px;
+    }
+
+    .faq-item {
+        margin-bottom: 20px;
+    }
+
+    .faq-question {
+        padding: 25px;
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        padding: 0 25px 25px;
+        font-size: 16px;
+    }
 }
 
 /* Contact Section */
@@ -573,7 +630,7 @@ nav {
 }
 
 .contact-container {
-    max-width: var(--container-width);
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -626,7 +683,7 @@ footer {
 }
 
 .footer-content {
-    max-width: var(--container-width);
+    max-width: 800px;
     margin: 0 auto;
 }
 
