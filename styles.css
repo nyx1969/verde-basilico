@@ -1,6 +1,7 @@
 /* Variabili e reset */
 :root {
     --primary-color: #2E7D32;
+    --primary-dark: #1b5e20;  /* Colore più scuro per testo su sfondo grigio */
     --secondary-color: #558B2F;
     --accent-color: #8BC34A;
     --white: #ffffff;
@@ -336,7 +337,7 @@ nav {
 .menu-section h2 {
     font-size: 28px;
     margin-bottom: 40px;
-    color: var(--primary-color);
+    color: var(--primary-dark);
 }
 
 .menu-grid {
@@ -667,12 +668,12 @@ nav {
 
 .contact-method i {
     font-size: 32px;
-    color: var(--primary-color);
+    color: var(--primary-dark);
     margin-bottom: 5px;
 }
 
 .contact-method h3 {
-    color: var(--primary-color);
+    color: var(--primary-dark);
     font-size: 20px;
     margin: 0;
 }
@@ -694,7 +695,7 @@ nav {
 
 .contact-button {
     display: inline-block;
-    background: var(--primary-color);
+    background: var(--primary-dark);
     color: white;
     text-decoration: none;
     padding: 10px 25px;
@@ -704,7 +705,7 @@ nav {
 }
 
 .contact-button:hover {
-    background: #1b5e20;
+    background: var(--primary-color);
     transform: translateY(-2px);
 }
 
