@@ -17,6 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100vw;
 }
 
 body {
@@ -243,11 +244,12 @@ nav {
     }
 }
 
-/* Fix per lo scroll orizzontale */
+/* Fix più aggressivo per lo scroll orizzontale */
 html, body {
+    max-width: 100%;
     overflow-x: hidden;
-    width: 100%;
-    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header non più fisso su mobile */
@@ -259,6 +261,22 @@ html, body {
 
     nav {
         padding: 10px 20px;
+        width: 100%;
+    }
+
+    .hero-content {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .title-line {
+        width: 100%;
+        white-space: normal;
+    }
+
+    h1, h2 {
+        width: 100%;
+        word-wrap: break-word;
     }
 }
 
