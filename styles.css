@@ -64,30 +64,34 @@ nav {
     display: flex;
     align-items: center;
     text-decoration: none;
-    gap: 10px;
+    gap: 12px;
 }
 
 .logo-img {
-    height: 40px;
+    height: 45px;
     width: auto;
 }
 
 .logo-text {
     display: flex;
     flex-direction: column;
+    line-height: 1;
 }
 
 .verde {
+    font-family: 'Playfair Display', serif;
     color: var(--primary-color);
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
 }
 
 .basilico {
+    font-family: 'Playfair Display', serif;
     color: var(--secondary-color);
-    font-size: 16px;
-    line-height: 1;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: -2px;
 }
 
 .contact-header {
@@ -95,6 +99,9 @@ nav {
 }
 
 .phone-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 600;
@@ -103,6 +110,10 @@ nav {
     border: 2px solid var(--primary-color);
     border-radius: 25px;
     transition: all 0.3s ease;
+}
+
+.phone-link i {
+    font-size: 16px;
 }
 
 .phone-link:hover {
@@ -185,17 +196,25 @@ nav {
         padding: 15px 40px;
     }
 
+    .logo-img {
+        height: 50px;
+    }
+
     .verde {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .basilico {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .phone-link {
         font-size: 20px;
         padding: 10px 20px;
+    }
+
+    .phone-link i {
+        font-size: 18px;
     }
 
     .hero {
