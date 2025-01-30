@@ -40,12 +40,12 @@ section h2 {
     padding-top: 20px; /* Spazio extra sopra per il testo verde */
 }
 
-/* Header - Mobile First */
+/* Header e Navigation */
 header {
     background: white;
-    padding: 10px;
-    width: 100%;
+    padding: 10px 20px;
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -58,7 +58,6 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .logo {
@@ -70,6 +69,7 @@ nav {
 
 .logo-img {
     height: 40px;
+    width: auto;
 }
 
 .logo-text {
@@ -79,101 +79,51 @@ nav {
 
 .verde {
     color: var(--primary-color);
+    font-size: 20px;
     font-weight: bold;
+    line-height: 1;
 }
 
 .basilico {
     color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 1;
 }
 
-.menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
+.contact-header {
+    text-align: right;
 }
 
-.menu-toggle span {
-    display: block;
-    width: 25px;
-    height: 2px;
-    background: var(--primary-color);
-    margin: 5px 0;
-}
-
-.mobile-menu {
-    display: none;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.mobile-menu.active {
-    display: block;
-}
-
-.nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.nav-links a {
+.phone-link {
     color: var(--primary-color);
     text-decoration: none;
-    font-size: 16px;
-    padding: 8px 0;
-}
-
-/* Pulsante chiamata fisso */
-.fixed-call-button {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: var(--primary-color);
-    color: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    z-index: 9999;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
     transition: all 0.3s ease;
 }
 
-.fixed-call-button:hover {
-    transform: scale(1.1);
-    background: #1b5e20;
+.phone-link:hover {
+    background: var(--primary-color);
+    color: white;
 }
 
-.fixed-call-button i {
-    font-size: 28px;
-}
-
-/* Hero Section */
+/* Hero Section - Più compatta */
 .hero {
-    background: var(--background-overlay), url('images/hero-bg.jpg') center/cover;
-    padding-top: 140px; /* Aumentato per far scendere il testo */
-    padding-bottom: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero-bg.jpg') center/cover;
+    padding: 100px 20px 40px;
     color: white;
     text-align: center;
-    width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .hero h1 {
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 20px;
     line-height: 1.4;
     max-width: 800px;
@@ -202,7 +152,7 @@ nav {
 .hero-features {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     margin-top: 30px;
     padding: 0 10px;
 }
@@ -212,9 +162,10 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
+    backdrop-filter: blur(5px);
 }
 
 .feature i {
@@ -228,47 +179,54 @@ nav {
     font-weight: 500;
 }
 
-/* Desktop styles per hero */
+/* Desktop Styles */
 @media screen and (min-width: 768px) {
+    header {
+        padding: 15px 40px;
+    }
+
+    .verde {
+        font-size: 24px;
+    }
+
+    .basilico {
+        font-size: 20px;
+    }
+
+    .phone-link {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
     .hero {
-        padding-top: 160px; /* Aumentato per far scendere il testo */
-        padding-bottom: 80px;
+        padding: 120px 40px 60px;
     }
 
     .hero h1 {
-        font-size: 42px;
-        margin-bottom: 30px;
+        font-size: 36px;
+        margin-bottom: 25px;
     }
 
     .hero h2 {
-        font-size: 28px;
+        font-size: 24px;
         margin-bottom: 20px;
     }
 
     .hero-subtitle {
-        font-size: 20px;
-        margin-bottom: 40px;
+        font-size: 18px;
+        margin-bottom: 35px;
     }
 
     .hero-features {
         flex-direction: row;
         justify-content: center;
-        gap: 30px;
-        margin-top: 50px;
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
+        gap: 25px;
+        margin-top: 40px;
     }
 
     .feature {
         flex: 1;
         max-width: 300px;
-        padding: 15px 20px;
-        transition: transform 0.3s ease;
-    }
-
-    .feature:hover {
-        transform: translateY(-5px);
     }
 
     .feature i {
@@ -278,6 +236,34 @@ nav {
     .feature span {
         font-size: 18px;
     }
+}
+
+/* Pulsante chiamata fisso */
+.fixed-call-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: var(--primary-color);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+.fixed-call-button:hover {
+    transform: scale(1.1);
+    background: #1b5e20;
+}
+
+.fixed-call-button i {
+    font-size: 28px;
 }
 
 /* Sezione Come Funziona */
@@ -542,7 +528,6 @@ nav {
 
     .menu-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
     }
 
     .menu-day {
