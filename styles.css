@@ -348,152 +348,90 @@ nav {
 }
 
 /* How it works */
-.how-it-works, .menu-section, .faq-section, .contact-section {
-    padding-top: 6rem;
-    margin-top: -2rem;
+.how {
+    padding: 20px 10px;
+    text-align: center;
 }
 
-.how-it-works {
-    position: relative;
-    z-index: 1;
-    background: var(--white);
-    border-radius: 30px 30px 0 0;
-    margin-top: -3rem;
+.how h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #2E7D32;
 }
 
 .steps {
-    max-width: var(--container-width);
-    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-    padding: 2rem 0;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    padding: 0 10px;
 }
 
 .step {
     text-align: center;
-    flex: 1;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 8px;
 }
 
-.step-icon {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 1rem;
-    background: var(--light-gray);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    color: var(--primary-color);
+.step i {
+    font-size: 24px;
+    color: #2E7D32;
+    margin-bottom: 10px;
+}
+
+.step h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #2E7D32;
+}
+
+.step p {
+    font-size: 14px;
+    color: #666;
 }
 
 /* Menu Section */
 .menu-section {
-    background: var(--light-gray);
+    padding: 20px 10px;
+    background: #f9f9f9;
 }
 
-.menu-header {
+.menu-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
     text-align: center;
-    margin-bottom: 3rem;
+    color: #2E7D32;
 }
 
-.menu-header h2 {
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
+.menu-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.menu-tagline {
-    color: var(--text-color);
-    font-size: 1.3rem;
-    font-weight: 500;
-    opacity: 0.9;
-    max-width: 800px;
-    margin: 0 auto;
+.menu-box h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #2E7D32;
+}
+
+.menu-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-box li {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
-.menu-tagline::before,
-.menu-tagline::after {
-    content: "";
-    height: 1px;
-    width: 50px;
-    background: var(--primary-color);
-    opacity: 0.3;
-}
-
-.menu-grid {
-    max-width: var(--container-width);
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 0 1rem;
-}
-
-.menu-item {
-    background: var(--white);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.menu-item:hover {
-    transform: translateY(-5px);
-}
-
-.menu-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.menu-item-info {
-    padding: 1.5rem;
-}
-
-.menu-price {
-    font-size: 1.2rem;
-    color: var(--primary-color);
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.menu-note {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.special-menu-note {
-    background: var(--white);
-    padding: 2rem;
-    border-radius: 10px;
-    margin-top: 3rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.special-menu-note h3 {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.special-menu-note p {
-    color: var(--text-color);
-    line-height: 1.6;
-    font-size: 1.1rem;
+.menu-box i {
+    color: #2E7D32;
 }
 
 /* Menu Settimanale */
