@@ -243,6 +243,25 @@ nav {
     }
 }
 
+/* Fix per lo scroll orizzontale */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* Header non più fisso su mobile */
+@media screen and (max-width: 768px) {
+    header {
+        position: relative;
+        width: 100%;
+    }
+
+    nav {
+        padding: 10px 20px;
+    }
+}
+
 /* Hero Section */
 .hero {
     background: var(--background-overlay), url('images/hero-bg.jpg') center/cover;
