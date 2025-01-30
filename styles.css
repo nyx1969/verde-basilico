@@ -143,6 +143,106 @@ nav {
     color: #666;
 }
 
+/* Stili per il menu mobile */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #2E7D32;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.fixed-call-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2E7D32;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.fixed-call-button i {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        padding: 80px 20px 20px;
+        z-index: 999;
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+        font-size: 1.2em;
+    }
+
+    .contact-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .phone-link {
+        display: none;
+    }
+
+    .fixed-call-button {
+        display: block;
+    }
+
+    /* Animazione hamburger */
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
 /* Hero Section */
 .hero {
     background: var(--background-overlay), url('images/hero-bg.jpg') center/cover;
@@ -380,6 +480,89 @@ nav {
     color: var(--text-color);
     line-height: 1.6;
     font-size: 1.1rem;
+}
+
+/* Menu Settimanale */
+.weekly-menu {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 1000px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.weekly-menu h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.menu-day {
+    background: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.menu-day:hover {
+    transform: translateY(-5px);
+}
+
+.menu-day h4 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.menu-items {
+    text-align: center;
+}
+
+.menu-items p {
+    margin: 0.5rem 0;
+}
+
+.main-dish {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.side-dish {
+    color: #666;
+}
+
+.dessert {
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+/* Responsive per menu settimanale */
+@media (max-width: 768px) {
+    .weekly-menu {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .menu-day {
+        padding: 1rem;
+    }
 }
 
 /* FAQ Section */
