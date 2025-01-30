@@ -580,7 +580,7 @@ nav {
 
 .faq-item h3 {
     color: var(--secondary-color);
-    font-size: 18px;
+    font-size: 16px;
     margin: 0 0 10px 0;
     font-weight: 600;
 }
@@ -619,8 +619,8 @@ nav {
     }
 
     .faq-item h3 {
-        font-size: 20px;
-        margin-bottom: 15px;
+        font-size: 16px;
+        margin-bottom: 10px;
     }
 
     .faq-item p, 
