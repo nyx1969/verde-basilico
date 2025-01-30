@@ -24,11 +24,12 @@ html, body {
 
 /* Stili base e spaziature uniformi */
 section {
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
 section + section {
-    padding-top: 50px;
+    margin-top: 0;
+    padding-top: 40px;
 }
 
 section h2 {
@@ -37,7 +38,6 @@ section h2 {
     margin-bottom: 30px;
     font-size: 28px;
     line-height: 1.4;
-    padding-top: 20px; /* Spazio extra sopra per il testo verde */
 }
 
 /* Header e Navigation */
@@ -269,7 +269,7 @@ nav {
 /* Sezione Come Funziona */
 .how-section {
     background: white;
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
 .steps {
@@ -278,6 +278,7 @@ nav {
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .step {
@@ -310,7 +311,7 @@ nav {
 /* Menu Section */
 .menu-section {
     background: var(--light-gray);
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
 .menu-section h2 {
@@ -323,7 +324,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -345,7 +346,7 @@ nav {
 }
 
 .menu-content {
-    margin-top: 40px;
+    margin-top: 30px;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -357,6 +358,7 @@ nav {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 30px;
 }
 
 .menu-box h3 {
@@ -389,17 +391,16 @@ nav {
 /* Desktop Styles */
 @media screen and (min-width: 768px) {
     section {
-        padding: 80px 40px;
+        padding: 60px 40px;
     }
 
     section + section {
-        padding-top: 80px;
+        padding-top: 60px;
     }
 
     section h2 {
         font-size: 36px;
-        margin-bottom: 50px;
-        padding-top: 30px; /* Spazio extra sopra per il testo verde */
+        margin-bottom: 40px;
     }
 
     .steps {
@@ -432,7 +433,7 @@ nav {
     .menu-grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     .menu-box {
@@ -537,13 +538,14 @@ nav {
 
 /* FAQ Section */
 .faq-section {
-    padding: 50px 20px;
-    background: var(--light-gray);
+    background: white;
+    padding: 40px 20px;
 }
 
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .faq-item {
@@ -569,20 +571,23 @@ nav {
     line-height: 1.6;
 }
 
+.faq-item:last-child {
+    margin-bottom: 0;
+}
+
 /* Desktop Styles */
 @media screen and (min-width: 768px) {
     section {
-        padding: 80px 40px;
+        padding: 60px 40px;
     }
 
     section + section {
-        padding-top: 80px;
+        padding-top: 60px;
     }
 
     section h2 {
         font-size: 36px;
-        margin-bottom: 50px;
-        padding-top: 30px; /* Spazio extra sopra per il testo verde */
+        margin-bottom: 40px;
     }
 
     .hero {
@@ -591,7 +596,7 @@ nav {
     }
 
     .faq-section {
-        padding: 80px 40px;
+        padding: 60px 40px;
     }
 
     .faq-item {
@@ -612,11 +617,13 @@ nav {
 /* Contact Section */
 .contact-section {
     background: var(--light-gray);
+    padding: 40px 20px;
 }
 
 .contact-container {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .contact-methods {
