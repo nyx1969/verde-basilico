@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Verde Basilico - Pasti a Domicilio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="Verde Basilico" class="logo-img">
+                <div class="logo-text">
+                    <span class="verde">VERDE</span>
+                    <span class="basilico">basilico</span>
+                </div>
+            </a>
+            <div class="contact-header">
+                <a href="tel:+41764897572" class="phone-link">
+                    <i class="fas fa-phone-alt"></i>
+                    076 489 75 72
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>IL PIACERE DI UN PASTO FATTO IN CASA SENZA IL PENSIERO DI CUCINARE</h1>
+        <h2>SERVIZIO DI CONSEGNA PASTI A DOMICILIO NEL LOCARNESE E DINTORNI</h2>
+        <p class="hero-subtitle">Per anziani e per chi desidera ricevere un pasto pronto direttamente a casa</p>
+        <div class="hero-features">
+            <div class="feature">
+                <i class="fas fa-utensils"></i>
+                <span>CUCINA CASALINGA</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-leaf"></i>
+                <span>INGREDIENTI FRESCHI</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-truck"></i>
+                <span>CONSEGNA A DOMICILIO</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="how" id="how">
+        <h2>Come Funziona</h2>
+        <div class="steps">
+            <div class="step">
+                <i class="fas fa-phone-alt"></i>
+                <h3>1. Ordina</h3>
+                <p>Chiama entro le 18:30 del giorno prima</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-kitchen-set"></i>
+                <h3>2. Prepariamo</h3>
+                <p>Cuciniamo con ingredienti freschi</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-truck-fast"></i>
+                <h3>3. Consegniamo</h3>
+                <p>Direttamente a casa tua</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <h2>I Nostri Piatti</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="images/dishes/PHOTO-2024-10-10-17-36-49.jpg" alt="Piatto della casa">
+            </div>
+            <div class="menu-item">
+                <img src="images/dishes/PHOTO-2024-10-10-17-36-50.jpg" alt="Piatto della casa">
+            </div>
+            <div class="menu-item">
+                <img src="images/dishes/PHOTO-2024-10-10-17-36-51.jpg" alt="Piatto della casa">
+            </div>
+            <div class="menu-item">
+                <img src="images/dishes/PHOTO-2024-10-10-17-36-52.jpg" alt="Piatto della casa">
+            </div>
+        </div>
+        <div class="menu-content">
+            <div class="menu-box">
+                <h3>Ogni Box include:</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Piatto principale con contorno</li>
+                    <li><i class="fas fa-check"></i> Antipasto o insalata fresca</li>
+                    <li><i class="fas fa-check"></i> Pane fresco</li>
+                    <li><i class="fas fa-check"></i> Dolce o frutta</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <h2>Domande Frequenti</h2>
+            <div class="faq-item">
+                <h3>Quando devo ordinare?</h3>
+                <p>Gli ordini devono essere effettuati entro le 18:30 del giorno prima della consegna.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Quali zone coprite?</h3>
+                <p>Serviamo tutta la zona del Locarnese e dintorni.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Come posso pagare?</h3>
+                <p>In contanti o con Twint alla consegna o fattura.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Cosa include il servizio?</h3>
+                <p>Il servizio include la preparazione dei pasti freschi e la consegna a domicilio. I piatti vengono consegnati in contenitori di vetro che verranno ritirati alla consegna successiva del pasto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2>Contattaci</h2>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@verdebasilico.ch</p>
+                    <div class="button-container">
+                        <a href="mailto:info@verdebasilico.ch" class="contact-button">Invia Email</a>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-clock"></i>
+                    <h3>Orari Consegna</h3>
+                    <p>Lunedì - Sabato</p>
+                    <p>Ordini entro le 18:30 del giorno prima</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>2025 Verde Basilico - Pasti a Domicilio</p>
+            </div>
+            <div class="footer-contact">
+                <p>Tel: 076 489 75 72 | Email: info@verdebasilico.ch</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>
